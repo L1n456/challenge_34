@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree";
+}
+
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+header{
+    background: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+}
+
+header img{
+    width: 10%;
+    margin: 10% 45% 5% 45% ;
+}
+
+.intro h1{
+    color: var(--Dark-Grayish-Blue);
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 40px;
+}
+
+.intro p{
+    color: var(--Grayish-Blue);
+    text-align: center;
+    margin-bottom: 2%; 
+    padding: 0 28%;
+    line-height: 1.3em;
+}
+
+.btns{
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border-radius: 30px;
+    color: white;
+    padding: 1% 2%;
+    margin-bottom: 10%;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.ios{
+    background-color: var(--Strong-Cyan);
+    border: 1px solid transparent;
+    box-shadow: 1px 3px 0px 0px hsl(171, 95%, 33%),2px 8px 5px 0px hsl(171deg 100% 83%) ;
+}
+
+.mac{
+    background-color: var(--Light-Blue);
+    border: 1px solid transparent;
+    box-shadow: 1px 3px 0px 0px hsl(233, 49%, 44%),6px 12px 5px 0px hsl(0deg 0% 57% / 13%);
+}
+
+h1{
+    color: var(--Dark-Grayish-Blue);
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 30px;
+}
+
+.track p{
+    text-align: center;
+    color: var(--Grayish-Blue);
+    padding: 0 25%;
+    margin-bottom: 3%;
+    line-height: 1.3em;
+}
+
+.track .btm{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 5%;
+}
+
+.track .btm .left{
+    width: 50%;
+    margin-left: -5%;
+}
+
+.track .btm .right{
+    display: flex;
+    flex-direction: column;
+}
+
+.track .btm .right h3{
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 2%;
+}
+
+.track .btm .right p{
+    text-align: left;
+    padding: 0;
+    padding-right: 45%;
+    margin-bottom: 5%;
+}
+
+.access p{
+    color: var(--Grayish-Blue);
+    margin-bottom: 10%;
+    text-align: center;
+    padding: 0 25%;
+}
+
+.access img{
+    margin: 0 15%;
+    width: 70%;
+}
+
+.sup p{
+    color: var(--Grayish-Blue);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.sup .flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2%;
+    padding: 0 4%;
+    margin-bottom: 5%;
+}
+
+.sup .flex div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.sup .flex div img{
+    width: 10%;
+    margin-bottom: 5%;
+}
+
+.sup .flex .prev img{
+    margin-bottom: 7.5;
+}
+
+.sup .flex div h3{
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 2%;
+}
+
+.sup .logos{
+    padding: 0 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+.sup .logos img{
+    width: 10%;
+}
+
+.clip p{
+    color: var(--Grayish-Blue);
+    text-align: center;
+    padding: 0 25%;
+    margin-bottom: 5%;
+}
+
+footer{
+    background-color: hsl(220, 18%, 97%);
+    display: flex;
+    padding: 2% 8%;
+    align-items: center;
+    gap: 10%;
+}
+
+footer .logo{
+    width: 5%;
+}
+
+footer ul{
+    width: 50%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15%;
+    color: var(--Dark-Grayish-Blue);
+    margin-right: 10%;
+}
+
+footer li:hover{
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+
+footer .logos{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10%;
+}
+
+footer .lg:hover path{
+    fill: var(--Strong-Cyan);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    header img{
+        width: 30%;
+        margin: 10% 35% 5% 35% ;
+    }
+    
+    .intro h1{
+        margin-top: 5%;
+        font-size: 35px;
+        padding: 0 2%;
+    }
+    
+    .intro p{
+        margin-bottom: 10%; 
+        padding: 0 9%;
+        line-height: 1.3em;
+    }
+    
+    .btns{
+        flex-direction: column;
+        gap: 0%;
+        margin-bottom: 20%;
+    }
+    
+    button{
+        width: 80%;
+        padding: 4% 5%;
+        margin-bottom: 5%;
+    }
+    
+    h1{
+        color: var(--Dark-Grayish-Blue);
+        text-align: center;
+        margin-bottom: 2%;
+        font-size: 30px;
+    }
+    
+    .track p{
+        padding: 0 10%;
+        margin-bottom: 5%;
+    }
+    
+    .track .btm{
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    
+    .track .btm .left{
+        width: 80%;
+        margin-left: 0%;
+        margin-bottom: 10%;
+    }
+    
+    .track .btm .right{
+        text-align: center;
+    }
+    
+    .track .btm .right p{
+        text-align: center;
+        padding: 0 10%;
+        margin-bottom: 10%;
+    }
+    
+    .access p{
+        padding: 0 7%;
+    }
+    
+    .access img{
+        margin: 0%;
+        margin-bottom: 20%;
+        width: 100%;
+    }
+    
+    .sup p{
+        padding: 0 10%;
+        margin-bottom: 15%;
+    }
+    
+    .sup .flex{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 4%;
+        margin-bottom: 5%;
+    }
+    
+    .sup .flex div{
+        width: 100%;
+    }
+    
+    .sup .flex div img{
+        margin-bottom: 10%;
+    }
+    
+    .sup .flex div h3{
+        margin-bottom: 5%;
+    }
+    
+    .sup .logos{
+        flex-direction: column;
+    }
+    
+    .sup .logos img{
+        width: 50%;
+        margin-bottom: 20%;
+    }
+
+    .clip{
+        padding: 0 5%;
+        margin-bottom: 10%;
+    }
+    
+    .clip p{
+        padding: 0 5%;
+        margin-bottom: 10%;
+    }
+    
+    footer{
+        height: fit-content;
+        flex-direction: column;
+        padding: 5%;
+    }
+    
+    footer .logo{
+        width: 15%;
+        margin-bottom: 10%;
+    }
+    
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+
+    footer li{
+        margin-bottom: 5%;
+    }
+    
+    footer .logos{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+}
